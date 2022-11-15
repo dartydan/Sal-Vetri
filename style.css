@@ -1,3 +1,40 @@
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
 body {
     position: relative;
     background: radial-gradient(50% 50% at 50% 50%, #00A2FA 0%, #007FCE 100%);
@@ -6,7 +43,7 @@ body {
 }
 
 nav {
-    position: fixed;
+    /* position: relative; */
 }
 
 button {
@@ -20,10 +57,14 @@ button {
     font-size: 20px;
     line-height: 23px;
     color: #FFFFFF;
+
+    background: #0180D0;
+    box-shadow: 0px 4px 4px #413115;
+    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
 }
 
 .name {
-    position: absolute;
+    position: fixed;
     width: auto;
     height: 40px;
     left: 708px;
@@ -96,61 +137,8 @@ header {
     border-radius: 82.5px;
 }
 
-/* .twitter-timeline {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 10px;
-
-    position: absolute;
-    width: 345px;
-    height: 500px;
-    left: 908px;
-    top: 215px;
-} */
-
-.cheat {
-    position: absolute;
-    width: 165px;
-    height: 50px;
-    left: 548.08px;
-    top: 75px;
-    background: #0180D0;
-    box-shadow: 0px 4px 4px #413115;
-    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
-}
-
-.dfs {
-    position: absolute;
-    width: 165px;
-    height: 50px;
-    left: 728.15px;
-    top: 75px;
-    background: #0180D0;
-    box-shadow: 0px 4px 4px #413115;
-    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
-}
-
-.podcast {
-    position: absolute;
-    width: 165px;
-    height: 50px;
-    left: 908.08px;
-    top: 75px;
-    background: #0180D0;
-    box-shadow: 0px 4px 4px #413115;
-    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
-}
-
-.signup {
-    position: absolute;
-    width: 165px;
-    height: 50px;
-    left: 1088.08px;
-    top: 75px;
-    background: #019FF6;
-    box-shadow: 0px 4px 4px #413115;
-    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
+.twitter-timeline {
+    display: block;
+    margin-left: 70%;
+    padding-top: 200px;
 }

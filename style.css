@@ -64,21 +64,15 @@ button {
 }
 
 .name {
-    position: fixed;
-    width: auto;
-    height: 40px;
-    left: 708px;
+    /* position: fixed; */
     top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     font-family: 'Work Sans', 'sans-serif';
     font-style: italic;
     font-weight: 700;
-    font-size: 34px;
-    line-height: 40px;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.75em;
 
     color: #000000;

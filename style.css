@@ -1,11 +1,90 @@
+body {
+    position: relative;
+    background: radial-gradient(50% 50% at 50% 50%, #00A2FA 0%, #007FCE 100%);
+    margin: 0;
+    padding: 0;
+}
+
 nav {
+    position: fixed;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    font-family: 'Work Sans', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.name {
+    position: absolute;
+    width: auto;
+    height: 40px;
+    left: 708px;
+    top: 20px;
+
+    font-family: 'Work Sans', 'sans-serif';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 40px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75em;
+
+    color: #000000;
+
+    text-shadow: 0px 4px 10px rgba(1, 159, 246, 0.2);
+}
+
+p {
+    font-family: 'Work Sans', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+li {
+    font-family: 'Work Sans', 'sans-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+}
+
+header {
+    position: fixed;
+    height: 150px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+
     background: linear-gradient(180deg, #FFFE00 0%, #FFFF82 100%);
     mix-blend-mode: normal;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 20px 20px;
 }
 
-logo {
+.logo {
     position: absolute;
     width: 165px;
     height: 165px;
@@ -15,4 +94,63 @@ logo {
     background: url(400x400.png);
     filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.25));
     border-radius: 82.5px;
+}
+
+/* .twitter-timeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    position: absolute;
+    width: 345px;
+    height: 500px;
+    left: 908px;
+    top: 215px;
+} */
+
+.cheat {
+    position: absolute;
+    width: 165px;
+    height: 50px;
+    left: 548.08px;
+    top: 75px;
+    background: #0180D0;
+    box-shadow: 0px 4px 4px #413115;
+    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
+}
+
+.dfs {
+    position: absolute;
+    width: 165px;
+    height: 50px;
+    left: 728.15px;
+    top: 75px;
+    background: #0180D0;
+    box-shadow: 0px 4px 4px #413115;
+    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
+}
+
+.podcast {
+    position: absolute;
+    width: 165px;
+    height: 50px;
+    left: 908.08px;
+    top: 75px;
+    background: #0180D0;
+    box-shadow: 0px 4px 4px #413115;
+    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
+}
+
+.signup {
+    position: absolute;
+    width: 165px;
+    height: 50px;
+    left: 1088.08px;
+    top: 75px;
+    background: #019FF6;
+    box-shadow: 0px 4px 4px #413115;
+    transform: matrix(0.97, 0, -0.27, 1, 0, 0);
 }

@@ -21,6 +21,26 @@
   </head>
   <body>
     <header>
+
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+      
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#">Cheat Sheet</a>
+          <a href="#">DFS</a>
+          <a href="#">Podcast</a>
+          <a href="#">5 Secret Friday</a>
+        </div>
+      
+      </div>
+      
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span class="hamburger" onclick="openNav()">Secret Menu</span>
+      
       <section class="container">
         <div class="name">
           <h1>SAL VETRI</h1>
@@ -64,6 +84,17 @@
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script>
+      /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+    </script>
   </body>
   <footer>
     <p>This is the footer.</p>
